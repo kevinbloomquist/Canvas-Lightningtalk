@@ -1,10 +1,15 @@
 # Canvas-Lightningtalk
 ---
+Think back over the last 12 weeks. Did you, at any point in time, have a thought like " I JUST WANT THAT THING TO BE THERE!!!" or "WHY CAN'T I JUST MAKE A THING! ALL I WANT TO DO IS MAKE A THING!?" or "IF MY SCREEN WERE A PIECE OF PAPER I'D BE DONE BY NOW!"
+
+No? Good for you, shut up.
+
+The rest of us get canvas now!
 
 ##What is Canvas?
 Added in HTML5, the HTML `<canvas>` element can be used to draw graphics via scripting in JavaScript. For example, it can be used to draw graphs, make photo compositions, create animations, or even do real-time video processing or rendering.
 
-##Basic Usage
+##How do I use it?
 The Canvas
 ````
 <canvas id="demo" width="150" height="150"></canvas>
@@ -42,7 +47,7 @@ The `<canvas>` element creates a fixed-size drawing surface that exposes one or 
 The canvas is initially blank. To display something, a script first needs to access the rendering context and draw on it. The `<canvas>` element has a method called getContext(), used to obtain the rendering context and its drawing functions. getContext() takes one parameter, the type of context. For 2D graphics, you specify "2d" to get a CanvasRenderingContext2D.
 
 ``
-var canvas = document.getElementById('tutorial') 
+var canvas = document.getElementById('demo') 
 ``  
 
 ``
@@ -62,6 +67,18 @@ The first line in the script retrieves the node in the DOM representing the `<ca
 If you remember from the section above our example grid is a square with a width and height of 150px. Imagine a grid painted over our canvas. Normally 1 unit in the grid corresponds to 1 pixel on the canvas. The origin of this grid is positioned in the top left corner at coordinate (0,0). All elements are placed relative to this origin. So the position of the top left corner of the blue square becomes x pixels from the left and y pixels from the top, at coordinate (x,y). You can translate the origin to a different position, rotate the grid and even scale it, but for now we'll stick to the default.
 
 ![](https://mdn.mozillademos.org/files/224/Canvas_default_grid.png)
+
+##Drawing shapes
+
+Canvas only inherently supports one shape... a rectangle. That is to say, the only shape you will see the code directly allude to is rect like in the code below  
+```
+fillRect(x, y, width, height)
+Draws a filled rectangle.
+strokeRect(x, y, width, height)
+Draws a rectangular outline.
+clearRect(x, y, width, height)
+Clears the specified rectangular area, making it fully transparent.
+```
 
 
 
