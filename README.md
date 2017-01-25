@@ -1,5 +1,5 @@
 # Canvas-Lightningtalk
-
+---
 
 ##What is Canvas?
 Added in HTML5, the HTML `<canvas>` element can be used to draw graphics via scripting in JavaScript. For example, it can be used to draw graphs, make photo compositions, create animations, or even do real-time video processing or rendering.
@@ -19,7 +19,7 @@ The `<canvas>` element itself is a normal block element and can be styled like a
 
 ##Support
 Canvas seems to be pretty well supported for a relatively new syntax          
-[http://caniuse.com/#feat=canvas]
+[Check it out!](http://caniuse.com/#feat=canvas)
 
 ###Note:
 With that said,keep in mind that canvas displays alternative/fallback content a little differently. Providing fallback content is very straightforward: just insert the alternate content inside the `<canvas>` element. Browsers that don't support `<canvas>` will ignore the container and render the fallback content inside it. Browsers that do support `<canvas>` will ignore the content inside the container, and just render the canvas normally.
@@ -52,4 +52,20 @@ var ctx = canvas.getContext('2d');
 The first line in the script retrieves the node in the DOM representing the `<canvas>` element by calling the document.getElementById() method. Once you have the element node, you can access the drawing context using its getContext() method.
 
 ##Get to the good stuff already!
+
+
+##Alright...
+
+###The Grid
+---
+
+If you remember from the section above our example grid is a square with a width and height of 150px. Imagine a grid painted over our canvas. Normally 1 unit in the grid corresponds to 1 pixel on the canvas. The origin of this grid is positioned in the top left corner at coordinate (0,0). All elements are placed relative to this origin. So the position of the top left corner of the blue square becomes x pixels from the left and y pixels from the top, at coordinate (x,y). You can translate the origin to a different position, rotate the grid and even scale it, but for now we'll stick to the default.
+
+![](https://mdn.mozillademos.org/files/224/Canvas_default_grid.png)
+
+
+
+
+
+
 
