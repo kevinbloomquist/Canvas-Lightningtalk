@@ -74,11 +74,56 @@ Canvas only inherently supports one shape... a rectangle. That is to say, the on
 ```
 fillRect(x, y, width, height)
 Draws a filled rectangle.
+
 strokeRect(x, y, width, height)
 Draws a rectangular outline.
+
 clearRect(x, y, width, height)
 Clears the specified rectangular area, making it fully transparent.
 ```
+
+Here is an example of what a draw function might look like. Note how the canvas and context are brought in. Most if not all of your canvas work will start like this.
+
+```
+function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+    ctx.fillRect(25, 25, 100, 100);
+    ctx.clearRect(45, 45, 60, 60);
+    ctx.strokeRect(50, 50, 50, 50);
+  }
+}
+```
+The fillRect() function draws a large black square 100 pixels on each side. The clearRect() function then erases a 60x60 pixel square from the center, and then strokeRect() is called to create a rectangular outline 50x50 pixels within the cleared square.
+
+The rest the cool stuff comes through path and move methods so...
+
+##What is a path?
+
+A path is a list of points, that can be any shape. You can vary a path by width or color and they can be left open or closed to complete a non-rectangular shape. In other words, think like an etch-a-sketch. 
+
+Great, so we can almost make an awesome shape but then we have to cross everything to get to another spot or start a new shape...
+
+Nope!
+We have moveTo(x,y)! The moveTo() function is how we escape the etch-a-sketch handcuffs and pick up our pencil. Which is the last piece of the "getting started" puzzle.
+
+##So what kind of stuff can I do!?
+
+Like most of the awesome creative tools we've seen so far ( or a pencil for that matter) canvas is pretty easy to pick up and you could be up and struggling in just a few minutes but again, like most creative tools there is a "creative curve" and it feels like it would take alot of "doodling" to get the final product to match your vision.
+
+With just a little time spent on tutorials you could produce some fun stuff:
+(Fun!)[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes]
+
+Given a few days...
+(GA Student Project)[https://github.com/briandridge/project-1]
+
+But canvas can do some really cool stuff so the sky's the limit!
+(Legwork Studios)[http://www.legworkstudio.com/animation]
+
+
+
 
 
 
