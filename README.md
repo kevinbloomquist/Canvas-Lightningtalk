@@ -114,13 +114,13 @@ We have moveTo(x,y)! The moveTo() function is how we escape the etch-a-sketch ha
 Like most of the awesome creative tools we've seen so far ( or a pencil for that matter) canvas is pretty easy to pick up and you could be up and struggling in just a few minutes but again, like most creative tools there is a "creative curve" and it feels like it would take alot of "doodling" to get the final product to match your vision.
 
 With just a little time spent on tutorials you could produce some fun stuff:
-(Fun!)[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes]
+[Fun!](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes)
 
 Given a few days...
-(GA Student Project)[https://github.com/briandridge/project-1]
+[GA Student Project](https://github.com/briandridge/project-1)
 
 But canvas can do some really cool stuff so the sky's the limit!
-(Legwork Studios)[http://www.legworkstudio.com/animation]
+[Legwork Studios](http://www.legworkstudio.com/animation)
 
 
 
